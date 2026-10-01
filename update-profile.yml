@@ -1,0 +1,48 @@
+name: Update profile README
+
+on:
+  schedule:
+    # daily at 06:17 UTC
+    - cron: "17 6 * * *" 
+  workflow_dispatch:
+  repository_dispatch:
+    types: [home-server-update]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Save home server payload
+        if: github.event_name == 'repository_dispatch'
+        env:
+          PAYLOAD: ${{ toJson(github.event.client_payload) }}
+        run: printf '%s' "$PAYLOAD" > data/home.json
+
+      - name: Refresh README and card
+        env:
+          GH_USER: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_profile.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh profile ($(date -u +%F))"
+            git push
+          fi
