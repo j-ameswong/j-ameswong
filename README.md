@@ -37,8 +37,8 @@
 
 ### <img src="assets/icons/repo-push.svg" width="16" height="16" alt=""/> Live deployments
 <!-- DEPLOYMENTS:START -->
-- [assign-me](https://assignme-weld.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 170 ms
-- [uxhack](https://uxhack-snakeup.vercel.app/signup) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 176 ms
+- [assign-me](https://assignme-weld.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 71 ms
+- [uxhack](https://uxhack-snakeup.vercel.app/signup) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 113 ms
 <!-- DEPLOYMENTS:END -->
 
 ### <img src="assets/icons/database.svg" width="16" height="16" alt=""/> Homelab
@@ -54,4 +54,4 @@
 ### <img src="assets/icons/eye.svg" width="16" height="16" alt=""/> Latest hyperfixation
 Currently looking into text embedding + Jev as a decision layer for semantic matching
 
-<p align="right"><sub><em>Last refreshed: <!-- UPDATED:START -->2026-10-02 11:17 UTC<!-- UPDATED:END --> via systemd timer</em></sub></p>
+<p align="right"><sub><em>Last refreshed: <!-- UPDATED:START -->2026-10-02 12:32 UTC<!-- UPDATED:END --> via systemd timer</em></sub></p>
