@@ -36,16 +36,18 @@
 
 ### Live deployments
 <!-- DEPLOYMENTS:START -->
-- Not checked yet.
+- [assign-me](https://assignme-weld.vercel.app/) 🟢 up · 210 ms · [source](https://github.com/j-ameswong/assign-me)
+- [uxhack](https://uxhack-snakeup.vercel.app/signup) 🟢 up · 91 ms · [source](https://github.com/j-ameswong/uxhack)
 <!-- DEPLOYMENTS:END -->
 
 ### Homelab
 <!-- HOMELAB:START -->
-- 🖥️ Server up 1 week, 6 days, 3 hours, 44 minutes
+- 🖥️ Server up 1 week, 6 days, 4 hours, 29 minutes
 - 🐳 3 containers running
+- 🔴 Tailnet unreachable
 <!-- HOMELAB:END -->
 
-<sub>Last refreshed: <!-- UPDATED:START -->2026-10-02 00:15 UTC<!-- UPDATED:END --> via systemd timer</sub>
+<sub>Last refreshed: <!-- UPDATED:START -->2026-10-02 00:59 UTC<!-- UPDATED:END --> via systemd timer</sub>
 
 ### Latest hyperfixation
 <p>Currently looking into text embedding + Jev as a decision layer for semantic matching</p>
