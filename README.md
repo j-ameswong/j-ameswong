@@ -35,15 +35,15 @@
 
 ### <img src="assets/icons/repo-push.svg" width="16" height="16" alt=""/> Live deployments
 <!-- DEPLOYMENTS:START -->
-- [assign-me](https://assignme-weld.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 210 ms
-- [uxhack](https://uxhack-snakeup.vercel.app/signup) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 91 ms
+- [assign-me](https://assignme-weld.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 193 ms
+- [uxhack](https://uxhack-snakeup.vercel.app/signup) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 94 ms
 <!-- DEPLOYMENTS:END -->
 
 ### <img src="assets/icons/database.svg" width="16" height="16" alt=""/> Homelab
 <!-- HOMELAB:START -->
-<img src="assets/icons/clock.svg" width="14" height="14" alt=""/> Server up 1 week, 6 days, 4 hours, 29 minutes<br/>
+<img src="assets/icons/clock.svg" width="14" height="14" alt=""/> Server up 1 week, 6 days, 5 hours, 33 minutes<br/>
 <img src="assets/icons/package.svg" width="14" height="14" alt=""/> 3 containers running<br/>
-<img src="assets/icons/dot-red.svg" width="14" height="14" alt=""/> Tailnet unreachable
+<img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> Tailnet Running: 24/26 peers online
 <!-- HOMELAB:END -->
 
 ### <img src="assets/icons/comment-code.svg" width="16" height="16" alt=""/> Stuff I've talked to AI a lot about
@@ -52,4 +52,4 @@
 ### <img src="assets/icons/eye.svg" width="16" height="16" alt=""/> Latest hyperfixation
 Currently looking into text embedding + Jev as a decision layer for semantic matching
 
-<p align="right"><sub><em>Last refreshed: <!-- UPDATED:START -->2026-10-02 00:59 UTC<!-- UPDATED:END --> via systemd timer</em></sub></p>
+<p align="right"><sub><em>Last refreshed: <!-- UPDATED:START -->2026-10-02 02:04 UTC<!-- UPDATED:END --> via systemd timer</em></sub></p>
