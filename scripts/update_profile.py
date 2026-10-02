@@ -24,6 +24,7 @@ HOMELAB_PAYLOAD = ROOT / "data" / "home.json"
 DEPLOYMENTS = [
     ("assign-me", "https://assignme-weld.vercel.app/", "j-ameswong/assign-me"),
     ("uxhack", "https://uxhack-snakeup.vercel.app/signup", "j-ameswong/uxhack"),
+    ("assessment-manager", "https://assessment-manager-fawn.vercel.app/", "j-ameswong/assessment-management"),
 ]
 # homelab-ping.sh still sends emoji-prefixed lines; swap them for octicons on the way in.
 HOMELAB_ICONS = {"🖥️": "clock", "🐳": "package", "🟢": "dot-green", "🔴": "dot-red"}
@@ -111,7 +112,7 @@ def deployments_section():
             health = f"{icon('dot-green')} up · {ms} ms"
         else:
             health = f"{icon('dot-red')} HTTP {status}"
-        lines.append(f"- [{name}]({url}) {health}") # · [source](https://github.com/{repo})")
+        lines.append(f"- [{name}]({url}) {health} · [repo](https://github.com/{repo})")
     return "\n".join(lines)
 
 
