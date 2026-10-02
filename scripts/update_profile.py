@@ -27,6 +27,9 @@ DEPLOYMENTS = [
 ]
 # homelab-ping.sh still sends emoji-prefixed lines; swap them for octicons on the way in.
 HOMELAB_ICONS = {"🖥️": "clock", "🐳": "package", "🟢": "dot-green", "🔴": "dot-red"}
+# Left out of the language bar: clashroyaletest is ~22 MB of HTML and drowns out everything else.
+LANGUAGE_SKIP_REPOS = {"clashroyaletest"}
+TOP_LANGUAGES = 5
 # GitHub linguist colours for the card's language bar.
 LANG_COLORS = {
     "Java": "#b07219", "Python": "#3572A5", "JavaScript": "#f1e05a", "TypeScript": "#3178c6",
@@ -69,19 +72,19 @@ def recent_activity(limit=5):
         kind, payload = event["type"], event.get("payload", {})
         if kind == "PushEvent" and ("push", repo) not in seen:
             seen.add(("push", repo))
-            lines.append(f"- {icon('commit')} Pushed to {link}")
+            lines.append(f"{icon('commit')} Pushed to {link}")
         elif kind == "PullRequestEvent" and payload.get("action") == "opened":
             pr = payload["pull_request"]
-            lines.append(f"- {icon('pr')} Opened PR [#{pr['number']}]({pr['html_url']}) in {link}")
+            lines.append(f"{icon('pr')} Opened PR [#{pr['number']}]({pr['html_url']}) in {link}")
         elif kind == "ReleaseEvent":
-            lines.append(f"- {icon('tag')} Released `{payload['release']['tag_name']}` of {link}")
+            lines.append(f"{icon('tag')} Released `{payload['release']['tag_name']}` of {link}")
         elif kind == "CreateEvent" and payload.get("ref_type") == "repository":
-            lines.append(f"- {icon('repo')} Created {link}")
+            lines.append(f"{icon('repo')} Created {link}")
         elif kind == "WatchEvent":
-            lines.append(f"- {icon('star')} Starred {link}")
+            lines.append(f"{icon('star')} Starred {link}")
         if len(lines) >= limit:
             break
-    return "\n".join(lines) or "- Quiet day Zzzzz. Probably reading docs."
+    return "<br/>\n".join(lines) or "Quiet day Zzzzz. Probably reading docs."
 
 
 def probe(url):
@@ -122,42 +125,47 @@ def homelab_section():
             if line.startswith(emoji):
                 line = f"{icon(name)} {line.removeprefix(emoji).lstrip()}"
                 break
-        lines.append(f"- {line}")
-    return "\n".join(lines) or None
+        lines.append(line)
+    return "<br/>\n".join(lines) or None
 
 
 def octicon(path, x, y, cls):
     return f'<path class="{cls}" transform="translate({x} {y})" fill-rule="evenodd" d="{path}"/>'
 
 
-def language_bar(counts, x=20, y=100, width=520):
-    """Classic metrics-style bar: top-3 languages by repo count, everything else in grey."""
+def language_bytes(repos):
+    """Bytes of code per language, summed over every repo's GitHub language breakdown."""
+    totals = Counter()
+    for repo in repos:
+        if repo["name"] in LANGUAGE_SKIP_REPOS:
+            continue
+        totals.update(gh(f"/repos/{repo['full_name']}/languages"))
+    return totals
+
+
+def language_bar(counts, x=44, y=100, width=496):
+    """Classic metrics-style bar: top languages by bytes of code, everything else in grey."""
     total = sum(counts.values()) or 1
     segments, cursor = [], x
-    for name, count in counts.most_common(3):
+    for name, count in counts.most_common(TOP_LANGUAGES):
         w = width * count / total
         segments.append(f'<rect x="{cursor:.1f}" y="{y}" width="{w:.1f}" height="8" fill="{LANG_COLORS.get(name, "#959da5")}"/>')
         cursor += w
 
-    items = [(escape(name), LANG_COLORS.get(name, "#959da5")) for name, _ in counts.most_common(3)]
-    item_widths = [16 + len(name) * 7 for name, _ in items]  # rough 13px glyph width
-    lx = x + width / 2 - (sum(item_widths) + 16 * (len(items) - 1)) / 2
-    legend = []
-    for (name, color), w in zip(items, item_widths):
-        legend.append(f'<circle cx="{lx + 4:.1f}" cy="{y + 26}" r="4" fill="{color}"/>'
-                      f'<text class="f" x="{lx + 14:.1f}" y="{y + 30}">{name}</text>')
-        lx += w + 16
-    if not items:
-        legend.append(f'<text class="f" x="{x + width / 2}" y="{y + 30}" text-anchor="middle">—</text>')
+    # One flowing <text> so spacing follows the real glyph widths.
+    legend = "".join(
+        f'<tspan dx="{16 if i else 0}" fill="{LANG_COLORS.get(name, "#959da5")}">●</tspan> {escape(name)}'
+        for i, (name, _) in enumerate(counts.most_common(TOP_LANGUAGES))
+    ) or "—"
 
     return f"""<clipPath id="bar"><rect x="{x}" y="{y}" width="{width}" height="8" rx="5"/></clipPath>
   <g clip-path="url(#bar)"><rect x="{x}" y="{y}" width="{width}" height="8" fill="#d1d5da"/>{"".join(segments)}</g>
-  {"".join(legend)}"""
+  <text class="f" x="{x}" y="{y + 30}">{legend}</text>"""
 
 
 def render_card(repos, today):
     own = [r for r in repos if not r["fork"] and not r["archived"]]
-    counts = Counter(r["language"] for r in own if r["language"])
+    counts = language_bytes(own)
     # Deterministic "repo of the day": same pick all day, rotates daily.
     featured = sorted(own, key=lambda r: r["name"])[today.toordinal() % len(own)] if own else None
 
@@ -184,7 +192,7 @@ def render_card(repos, today):
 
   {octicon(OCTICON_REPO, 12, 47, "hi")}
   <text class="h2" x="36" y="60">{len(own)} Repositories</text>
-  <text class="h3" x="280" y="88" text-anchor="middle">Most used languages</text>
+  <text class="h3" x="44" y="88">Most used languages</text>
   {language_bar(counts)}
 
   {octicon(OCTICON_SPARKLE, 12, 152, "hi")}

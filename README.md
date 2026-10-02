@@ -6,11 +6,6 @@
   <a href="https://www.youtube.com/@contessa420">YouTube</a>
 </p>
 
-<p align="center">
-  <!-- Regenerated daily by scripts/update_profile.py -->
-  <img src="assets/daily-card.svg" alt="Today's stats and featured repo" width="560"/>
-</p>
-
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
@@ -22,21 +17,21 @@
   />
 </picture>
 
-<table>
-<tr>
-<td width="50%" valign="top">
+---
+
+<p>
+  <!-- Regenerated daily by scripts/update_profile.py -->
+  <img src="assets/daily-card.svg" alt="Today's stats and featured repo" width="560"/>
+</p>
 
 ### <img src="assets/icons/pulse.svg" width="16" height="16" alt=""/> SWE larp log
 <!-- ACTIVITY:START -->
-- <img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/j-ameswong](https://github.com/j-ameswong/j-ameswong)
-- <img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/uxhack](https://github.com/j-ameswong/uxhack)
-- <img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/assign-me](https://github.com/j-ameswong/assign-me)
-- <img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/wf-market-watchdawg](https://github.com/j-ameswong/wf-market-watchdawg)
-- <img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/bad-apple-ify](https://github.com/j-ameswong/bad-apple-ify)
+<img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/j-ameswong](https://github.com/j-ameswong/j-ameswong)<br/>
+<img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/uxhack](https://github.com/j-ameswong/uxhack)<br/>
+<img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/assign-me](https://github.com/j-ameswong/assign-me)<br/>
+<img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/wf-market-watchdawg](https://github.com/j-ameswong/wf-market-watchdawg)<br/>
+<img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/bad-apple-ify](https://github.com/j-ameswong/bad-apple-ify)
 <!-- ACTIVITY:END -->
-
-</td>
-<td width="50%" valign="top">
 
 ### <img src="assets/icons/repo-push.svg" width="16" height="16" alt=""/> Live deployments
 <!-- DEPLOYMENTS:START -->
@@ -46,27 +41,15 @@
 
 ### <img src="assets/icons/database.svg" width="16" height="16" alt=""/> Homelab
 <!-- HOMELAB:START -->
-- <img src="assets/icons/clock.svg" width="14" height="14" alt=""/> Server up 1 week, 6 days, 4 hours, 29 minutes
-- <img src="assets/icons/package.svg" width="14" height="14" alt=""/> 3 containers running
-- <img src="assets/icons/dot-red.svg" width="14" height="14" alt=""/> Tailnet unreachable
+<img src="assets/icons/clock.svg" width="14" height="14" alt=""/> Server up 1 week, 6 days, 4 hours, 29 minutes<br/>
+<img src="assets/icons/package.svg" width="14" height="14" alt=""/> 3 containers running<br/>
+<img src="assets/icons/dot-red.svg" width="14" height="14" alt=""/> Tailnet unreachable
 <!-- HOMELAB:END -->
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
 
 ### <img src="assets/icons/comment-code.svg" width="16" height="16" alt=""/> Stuff I've talked to AI a lot about
 `Java` · `Python` · `Postgres` · `Docker` · `Spring` · `React`
 
-</td>
-<td width="50%" valign="top">
-
 ### <img src="assets/icons/eye.svg" width="16" height="16" alt=""/> Latest hyperfixation
 Currently looking into text embedding + Jev as a decision layer for semantic matching
-
-</td>
-</tr>
-</table>
 
 <p align="right"><sub><em>Last refreshed: <!-- UPDATED:START -->2026-10-02 00:59 UTC<!-- UPDATED:END --> via systemd timer</em></sub></p>
