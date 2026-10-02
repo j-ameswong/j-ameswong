@@ -1,8 +1,8 @@
 <h1 align="center">Yo, I'm James ^-^</h1>
 <p align="center">
-  <em>Backend tinkerer · homelab enjoyer · arch user (btw) · and neovim too (btw)</em><br/>
+  <em>obsessive ricer · homelab enjoyer · arch user (btw) · and neovim too (btw)</em><br/>
   <!-- <a href="https://yoursite.dev">yoursite.dev</a> · -->
-  Add me on Discord: `contessa.` · <a href="https://steamcommunity.com/id/fortunaptv">Steam</a> ·
+  Add me on Discord: <code>contessa.</code> · <a href="https://steamcommunity.com/id/fortunaptv">Steam</a> ·
   <a href="https://www.youtube.com/@contessa420">YouTube</a>
 </p>
 
