@@ -12,7 +12,7 @@ from collections import Counter
 from html import escape
 from pathlib import Path
 
-USER = os.environ.get("GH_USER", "your-username")
+USER = os.environ.get("GH_USER", "j-ameswong")
 TOKEN = os.environ.get("GITHUB_TOKEN")
 ROOT = Path(__file__).resolve().parent.parent
 README = ROOT / "README.md"
@@ -45,19 +45,19 @@ def recent_activity(limit=5):
         kind, payload = event["type"], event.get("payload", {})
         if kind == "PushEvent" and ("push", repo) not in seen:
             seen.add(("push", repo))
-            lines.append(f"- 🔨 Pushed to {link}")
+            lines.append(f"- Pushed to {link}")
         elif kind == "PullRequestEvent" and payload.get("action") == "opened":
             pr = payload["pull_request"]
-            lines.append(f"- 🔀 Opened PR [#{pr['number']}]({pr['html_url']}) in {link}")
+            lines.append(f"- Opened PR [#{pr['number']}]({pr['html_url']}) in {link}")
         elif kind == "ReleaseEvent":
-            lines.append(f"- 🚀 Released `{payload['release']['tag_name']}` of {link}")
+            lines.append(f"- Released `{payload['release']['tag_name']}` of {link}")
         elif kind == "CreateEvent" and payload.get("ref_type") == "repository":
-            lines.append(f"- ✨ Created {link}")
+            lines.append(f"- Created {link}")
         elif kind == "WatchEvent":
-            lines.append(f"- ⭐ Starred {link}")
+            lines.append(f"- Starred {link}")
         if len(lines) >= limit:
             break
-    return "\n".join(lines) or "- 💤 Quiet day. Probably reading docs."
+    return "\n".join(lines) or "- Quiet day Zzzzz. Probably reading docs."
 
 
 def homelab_section():

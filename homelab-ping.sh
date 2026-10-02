@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# Run from cron or a systemd timer on your home server, e.g.:
+# Run from cron on home server
 #   0 */6 * * *  GH_PAT=... /opt/profile/homelab-ping.sh
 # GH_PAT: fine-grained token scoped to ONLY your profile repo, Contents: read & write.
 set -euo pipefail
 REPO="j-ameswong/j-ameswong"
 
 UPTIME=$(uptime -p | sed 's/^up //')
-CONTAINERS=$(docker ps -q 2>/dev/null | wc -l || echo 0)
+CONTAINERS=$(docker ps -q 2>/dev/null | wc -l) || CONTAINERS=0
 
 curl -fsS -X POST "https://api.github.com/repos/${REPO}/dispatches" \
   -H "Authorization: Bearer ${GH_PAT}" \
