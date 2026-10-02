@@ -1,7 +1,7 @@
 {
   "lines": [
-    "🖥️ Server up 1 week, 6 days, 4 hours, 29 minutes",
+    "🖥️ Server up 1 week, 6 days, 5 hours, 33 minutes",
     "🐳 3 containers running",
-    "🔴 Tailnet unreachable"
+    "🟢 Tailnet Running: 24/26 peers online"
   ]
 }
