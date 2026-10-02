@@ -24,6 +24,8 @@
   <img src="assets/daily-card.svg" alt="Today's stats and featured repo" width="560"/>
 </p>
 
+---
+
 ### <img src="assets/icons/pulse.svg" width="16" height="16" alt=""/> SWE larp log
 <!-- ACTIVITY:START -->
 <img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/j-ameswong](https://github.com/j-ameswong/j-ameswong)<br/>
