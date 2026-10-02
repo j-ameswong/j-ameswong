@@ -24,7 +24,7 @@
 - No report from the server yet.
 <!-- HOMELAB:END -->
 
-<sub>Last refreshed: <!-- UPDATED:START -->never<!-- UPDATED:END --> via cron job</sub>
+<sub>Last refreshed: <!-- UPDATED:START -->never<!-- UPDATED:END --> via systemd timer</sub>
 
 ### Latest hyperfixation
 <p>Currently looking into text embedding + Jev as a decision layer for semantic matching</p>

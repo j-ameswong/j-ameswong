@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# Run from cron on home server
-#   0 */6 * * *  GH_PAT=... /opt/profile/homelab-ping.sh
-# GH_PAT: fine-grained token scoped to ONLY your profile repo, Contents: read & write.
+# Setup systemd timer on home server
 set -euo pipefail
 REPO="j-ameswong/j-ameswong"
 
