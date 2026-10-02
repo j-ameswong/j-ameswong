@@ -7,6 +7,8 @@ import datetime
 import json
 import os
 import re
+import time
+import urllib.error
 import urllib.request
 from collections import Counter
 from html import escape
@@ -18,6 +20,11 @@ ROOT = Path(__file__).resolve().parent.parent
 README = ROOT / "README.md"
 CARD = ROOT / "assets" / "daily-card.svg"
 HOMELAB_PAYLOAD = ROOT / "data" / "home.json"
+# (name, public URL, source repo)
+DEPLOYMENTS = [
+    ("assign-me", "https://assignme-weld.vercel.app/", "j-ameswong/assign-me"),
+    ("uxhack", "https://uxhack-snakeup.vercel.app/signup", "j-ameswong/uxhack"),
+]
 
 
 def gh(path):
@@ -60,6 +67,34 @@ def recent_activity(limit=5):
     return "\n".join(lines) or "- Quiet day Zzzzz. Probably reading docs."
 
 
+def probe(url):
+    """Return (HTTP status, latency in ms), or (None, None) if the host never answered."""
+    req = urllib.request.Request(url, headers={"User-Agent": f"{USER}-profile-status"})
+    start = time.monotonic()
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            status = resp.status
+    except urllib.error.HTTPError as err:
+        status = err.code
+    except OSError:
+        return None, None
+    return status, round((time.monotonic() - start) * 1000)
+
+
+def deployments_section():
+    lines = []
+    for name, url, repo in DEPLOYMENTS:
+        status, ms = probe(url)
+        if status is None:
+            health = "🔴 unreachable"
+        elif status < 400:
+            health = f"🟢 up · {ms} ms"
+        else:
+            health = f"🔴 HTTP {status}"
+        lines.append(f"- [{name}]({url}) {health} · [source](https://github.com/{repo})")
+    return "\n".join(lines)
+
+
 def homelab_section():
     if not HOMELAB_PAYLOAD.exists():
         return None
@@ -75,7 +110,7 @@ def render_card(repos, today):
     featured = sorted(own, key=lambda r: r["name"])[today.toordinal() % len(own)] if own else None
 
     feat_name = escape(featured["name"]) if featured else "nothing yet"
-    feat_desc = escape(((featured or {}).get("description") or "No description, just vibes.")[:70])
+    feat_desc = escape(((featured or {}).get("description") or "No description.")[:70])
     lang_text = escape(" · ".join(name for name, _ in langs) or "—")
 
     CARD.write_text(f"""<svg xmlns="http://www.w3.org/2000/svg" width="560" height="170" viewBox="0 0 560 170">
@@ -92,7 +127,6 @@ def render_card(repos, today):
   <rect class="bg" x="0.5" y="0.5" width="559" height="169" rx="10"/>
   <text class="h" x="20" y="32">📅 {today:%A, %d %B %Y}</text>
   <text class="n" x="20" y="72">{len(own)}</text><text class="t" x="20" y="92">repos</text>
-  <text class="n" x="120" y="72">{stars}</text><text class="t" x="120" y="92">stars earned</text>
   <text class="t" x="240" y="72">Top languages</text><text class="h" x="240" y="92">{lang_text}</text>
   <text class="t" x="20" y="128">Repo of the day</text>
   <text class="h" x="20" y="150">{feat_name} <tspan class="t">— {feat_desc}</tspan></text>
@@ -106,6 +140,7 @@ def main():
 
     text = README.read_text(encoding="utf-8")
     text = replace_section(text, "ACTIVITY", recent_activity())
+    text = replace_section(text, "DEPLOYMENTS", deployments_section())
     if (lab := homelab_section()):
         text = replace_section(text, "HOMELAB", lab)
     text = replace_section(text, "UPDATED", today.strftime("%Y-%m-%d %H:%M UTC"), inline=True)

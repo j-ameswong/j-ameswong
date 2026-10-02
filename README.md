@@ -11,6 +11,17 @@
   <img src="assets/daily-card.svg" alt="Today's stats and featured repo" width="560"/>
 </p>
 
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/j-ameswong/github-readme/main/output/contribs-dark.svg"
+  />
+  <img
+    alt="Isometric GitHub contribution chart"
+    src="https://raw.githubusercontent.com/j-ameswong/github-readme/main/output/contribs-light.svg"
+  />
+</picture>
+
 ### Stuff I've talked to AI a lot about
 `Java` · `Python` · `Postgres` · `Docker` · `Spring` · `React`
 
@@ -18,6 +29,11 @@
 <!-- ACTIVITY:START -->
 - Waiting for the first scheduled run…
 <!-- ACTIVITY:END -->
+
+### Live deployments
+<!-- DEPLOYMENTS:START -->
+- Not checked yet.
+<!-- DEPLOYMENTS:END -->
 
 ### Homelab
 <!-- HOMELAB:START -->
