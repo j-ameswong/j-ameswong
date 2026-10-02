@@ -25,11 +25,11 @@
 
 ### Homelab
 <!-- HOMELAB:START -->
-- 🖥️ Server up 1 week, 6 days, 3 hours, 42 minutes
-- 🐳 0 containers running
+- 🖥️ Server up 1 week, 6 days, 3 hours, 44 minutes
+- 🐳 3 containers running
 <!-- HOMELAB:END -->
 
-<sub>Last refreshed: <!-- UPDATED:START -->2026-10-02 00:12 UTC<!-- UPDATED:END --> via systemd timer</sub>
+<sub>Last refreshed: <!-- UPDATED:START -->2026-10-02 00:15 UTC<!-- UPDATED:END --> via systemd timer</sub>
 
 ### Latest hyperfixation
 <p>Currently looking into text embedding + Jev as a decision layer for semantic matching</p>
