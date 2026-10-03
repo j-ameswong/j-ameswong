@@ -20,8 +20,8 @@
   <text class="h2" x="36" y="60">24 Repositories</text>
   <text class="h3" x="44" y="88">Most used languages</text>
   <clipPath id="bar"><rect x="44" y="100" width="496" height="8" rx="5"/></clipPath>
-  <g clip-path="url(#bar)"><rect x="44" y="100" width="496" height="8" fill="#d1d5da"/><rect x="44.0" y="100" width="94.6" height="8" fill="#f1e05a"/><rect x="138.6" y="100" width="91.5" height="8" fill="#3178c6"/><rect x="230.1" y="100" width="71.1" height="8" fill="#3572A5"/><rect x="301.2" y="100" width="65.5" height="8" fill="#A97BFF"/><rect x="366.8" y="100" width="46.2" height="8" fill="#e34c26"/></g>
-  <text class="f" x="44" y="130"><tspan dx="0" fill="#f1e05a">●</tspan> JavaScript<tspan dx="16" fill="#3178c6">●</tspan> TypeScript<tspan dx="16" fill="#3572A5">●</tspan> Python<tspan dx="16" fill="#A97BFF">●</tspan> Kotlin<tspan dx="16" fill="#e34c26">●</tspan> HTML</text>
+  <g clip-path="url(#bar)"><rect x="44" y="100" width="496" height="8" fill="#d1d5da"/><rect x="44.0" y="100" width="92.9" height="8" fill="#3572A5"/><rect x="136.9" y="100" width="89.7" height="8" fill="#f1e05a"/><rect x="226.7" y="100" width="86.8" height="8" fill="#3178c6"/><rect x="313.5" y="100" width="62.2" height="8" fill="#A97BFF"/><rect x="375.7" y="100" width="43.9" height="8" fill="#e34c26"/></g>
+  <text class="f" x="44" y="130"><tspan dx="0" fill="#3572A5">●</tspan> Python<tspan dx="16" fill="#f1e05a">●</tspan> JavaScript<tspan dx="16" fill="#3178c6">●</tspan> TypeScript<tspan dx="16" fill="#A97BFF">●</tspan> Kotlin<tspan dx="16" fill="#e34c26">●</tspan> HTML</text>
 
   <path class="hi" transform="translate(12 152)" fill-rule="evenodd" d="M8.5.75a.75.75 0 00-1.5 0v5.19L4.391 3.33a.75.75 0 10-1.06 1.061L5.939 7H.75a.75.75 0 000 1.5h5.19l-2.61 2.609a.75.75 0 101.061 1.06L7 9.561v5.189a.75.75 0 001.5 0V9.56l2.609 2.61a.75.75 0 101.06-1.061L9.561 8.5h5.189a.75.75 0 000-1.5H9.56l2.61-2.609a.75.75 0 00-1.061-1.06L8.5 5.939V.75z"/>
   <text class="h2" x="36" y="165">Repo of the day</text>
