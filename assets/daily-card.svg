@@ -17,15 +17,15 @@
   <text class="h1" x="36" y="23">Saturday, 03 October 2026</text>
 
   <path class="hi" transform="translate(12 47)" fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/>
-  <text class="h2" x="36" y="60">23 Repositories</text>
+  <text class="h2" x="36" y="60">24 Repositories</text>
   <text class="h3" x="44" y="88">Most used languages</text>
   <clipPath id="bar"><rect x="44" y="100" width="496" height="8" rx="5"/></clipPath>
-  <g clip-path="url(#bar)"><rect x="44" y="100" width="496" height="8" fill="#d1d5da"/><rect x="44.0" y="100" width="95.5" height="8" fill="#f1e05a"/><rect x="139.5" y="100" width="92.4" height="8" fill="#3178c6"/><rect x="231.9" y="100" width="67.1" height="8" fill="#3572A5"/><rect x="299.0" y="100" width="66.2" height="8" fill="#A97BFF"/><rect x="365.2" y="100" width="46.7" height="8" fill="#e34c26"/></g>
+  <g clip-path="url(#bar)"><rect x="44" y="100" width="496" height="8" fill="#d1d5da"/><rect x="44.0" y="100" width="94.6" height="8" fill="#f1e05a"/><rect x="138.6" y="100" width="91.5" height="8" fill="#3178c6"/><rect x="230.1" y="100" width="71.1" height="8" fill="#3572A5"/><rect x="301.2" y="100" width="65.5" height="8" fill="#A97BFF"/><rect x="366.8" y="100" width="46.2" height="8" fill="#e34c26"/></g>
   <text class="f" x="44" y="130"><tspan dx="0" fill="#f1e05a">●</tspan> JavaScript<tspan dx="16" fill="#3178c6">●</tspan> TypeScript<tspan dx="16" fill="#3572A5">●</tspan> Python<tspan dx="16" fill="#A97BFF">●</tspan> Kotlin<tspan dx="16" fill="#e34c26">●</tspan> HTML</text>
 
   <path class="hi" transform="translate(12 152)" fill-rule="evenodd" d="M8.5.75a.75.75 0 00-1.5 0v5.19L4.391 3.33a.75.75 0 10-1.06 1.061L5.939 7H.75a.75.75 0 000 1.5h5.19l-2.61 2.609a.75.75 0 101.061 1.06L7 9.561v5.189a.75.75 0 001.5 0V9.56l2.609 2.61a.75.75 0 101.06-1.061L9.561 8.5h5.189a.75.75 0 000-1.5H9.56l2.61-2.609a.75.75 0 00-1.061-1.06L8.5 5.939V.75z"/>
   <text class="h2" x="36" y="165">Repo of the day</text>
   <path class="fi" transform="translate(20 177)" fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"/>
-  <text class="f b" x="44" y="190">archdots</text>
-  <text class="f" x="44" y="209">Dotfiles and instructions to make fresh arch installs easier (for me)</text>
+  <text class="f b" x="44" y="190">svc</text>
+  <text class="f" x="44" y="209">A simple TUI utility to manage systemd services</text>
 </svg>
