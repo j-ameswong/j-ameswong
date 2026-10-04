@@ -28,26 +28,26 @@
 
 ### <img src="assets/icons/pulse.svg" width="16" height="16" alt=""/> SWE larp log
 <!-- ACTIVITY:START -->
+<img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/mentee-mentor-matching](https://github.com/j-ameswong/mentee-mentor-matching)<br/>
 <img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/assessment-management](https://github.com/j-ameswong/assessment-management)<br/>
 <img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/j-ameswong](https://github.com/j-ameswong/j-ameswong)<br/>
 <img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/uxhack](https://github.com/j-ameswong/uxhack)<br/>
-<img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/assign-me](https://github.com/j-ameswong/assign-me)<br/>
-<img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/wf-market-watchdawg](https://github.com/j-ameswong/wf-market-watchdawg)
+<img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/assign-me](https://github.com/j-ameswong/assign-me)
 <!-- ACTIVITY:END -->
 
 ### <img src="assets/icons/repo-push.svg" width="16" height="16" alt=""/> Live deployments
 <!-- DEPLOYMENTS:START -->
-- [assign-me](https://assignme-weld.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 391 ms · [repo](https://github.com/j-ameswong/assign-me)
-- [uxhack](https://uxhack-snakeup.vercel.app/signup) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 115 ms · [repo](https://github.com/j-ameswong/uxhack)
-- [assessment-manager](https://assessment-manager-fawn.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 129 ms · [repo](https://github.com/j-ameswong/assessment-management)
-- [UniConnect](https://uniconnect-portfolio.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 240 ms · [repo](https://github.com/j-ameswong/mentee-mentor-matching)
+- [assign-me](https://assignme-weld.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 1248 ms · [repo](https://github.com/j-ameswong/assign-me)
+- [uxhack](https://uxhack-snakeup.vercel.app/signup) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 262 ms · [repo](https://github.com/j-ameswong/uxhack)
+- [assessment-manager](https://assessment-manager-fawn.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 119 ms · [repo](https://github.com/j-ameswong/assessment-management)
+- [UniConnect](https://uniconnect-portfolio.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 205 ms · [repo](https://github.com/j-ameswong/mentee-mentor-matching)
 <!-- DEPLOYMENTS:END -->
 
 ### <img src="assets/icons/database.svg" width="16" height="16" alt=""/> Homelab
 <!-- HOMELAB:START -->
-<img src="assets/icons/clock.svg" width="14" height="14" alt=""/> Server up 2 weeks, 1 day, 14 hours, 46 minutes<br/>
+<img src="assets/icons/clock.svg" width="14" height="14" alt=""/> Server up 2 weeks, 1 day, 20 hours, 48 minutes<br/>
 <img src="assets/icons/package.svg" width="14" height="14" alt=""/> 4 containers running<br/>
-<img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> Tailnet Running: 24/26 peers online
+<img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> Tailnet Running: 23/26 peers online
 <!-- HOMELAB:END -->
 
 ### <img src="assets/icons/comment-code.svg" width="16" height="16" alt=""/> Stuff I've talked to AI a lot about
@@ -56,4 +56,4 @@
 ### <img src="assets/icons/eye.svg" width="16" height="16" alt=""/> Latest hyperfixation
 Currently looking into text embedding + Jev as a decision layer for semantic matching
 
-<p align="right"><sub><em>Last refreshed: <!-- UPDATED:START -->2026-10-04 12:19 UTC<!-- UPDATED:END --> via systemd timer</em></sub></p>
+<p align="right"><sub><em>Last refreshed: <!-- UPDATED:START -->2026-10-04 17:19 UTC<!-- UPDATED:END --> via systemd timer</em></sub></p>
