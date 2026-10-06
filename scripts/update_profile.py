@@ -25,7 +25,8 @@ DEPLOYMENTS = [
     ("assign-me", "https://assignme-weld.vercel.app/", "j-ameswong/assign-me"),
     ("uxhack", "https://uxhack-snakeup.vercel.app/signup", "j-ameswong/uxhack"),
     ("assessment-manager", "https://assessment-manager-fawn.vercel.app/", "j-ameswong/assessment-management"),
-    ("UniConnect","https://uniconnect-portfolio.vercel.app/", "j-ameswong/mentee-mentor-matching")
+    ("UniConnect","https://uniconnect-portfolio.vercel.app/", "j-ameswong/mentee-mentor-matching"),
+    ("bad-apple-ify","https://bad-apple-ify.vercel.app/", "j-ameswong/bad-apple-ify")
 ]
 # homelab-ping.sh still sends emoji-prefixed lines; swap them for octicons on the way in.
 HOMELAB_ICONS = {"🖥️": "clock", "🐳": "package", "🟢": "dot-green", "🔴": "dot-red"}
