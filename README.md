@@ -28,8 +28,8 @@
 
 ### <img src="assets/icons/pulse.svg" width="16" height="16" alt=""/> SWE larp log
 <!-- ACTIVITY:START -->
-<img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/archdots](https://github.com/j-ameswong/archdots)<br/>
 <img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/riven-helper](https://github.com/j-ameswong/riven-helper)<br/>
+<img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/archdots](https://github.com/j-ameswong/archdots)<br/>
 <img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/nvim-dotfiles](https://github.com/j-ameswong/nvim-dotfiles)<br/>
 <img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/homelab-evo-x2](https://github.com/j-ameswong/homelab-evo-x2)<br/>
 <img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/wf-market-watchdawg](https://github.com/j-ameswong/wf-market-watchdawg)
@@ -37,11 +37,11 @@
 
 ### <img src="assets/icons/repo-push.svg" width="16" height="16" alt=""/> Live deployments
 <!-- DEPLOYMENTS:START -->
-- [assign-me](https://assignme-weld.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 200 ms · [repo](https://github.com/j-ameswong/assign-me)
-- [uxhack](https://uxhack-snakeup.vercel.app/signup) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 174 ms · [repo](https://github.com/j-ameswong/uxhack)
-- [assessment-manager](https://assessment-manager-fawn.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 64 ms · [repo](https://github.com/j-ameswong/assessment-management)
-- [UniConnect](https://uniconnect-portfolio.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 176 ms · [repo](https://github.com/j-ameswong/mentee-mentor-matching)
-- [bad-apple-ify](https://bad-apple-ify.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 48 ms · [repo](https://github.com/j-ameswong/bad-apple-ify)
+- [assign-me](https://assignme-weld.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 85 ms · [repo](https://github.com/j-ameswong/assign-me)
+- [uxhack](https://uxhack-snakeup.vercel.app/signup) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 41 ms · [repo](https://github.com/j-ameswong/uxhack)
+- [assessment-manager](https://assessment-manager-fawn.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 153 ms · [repo](https://github.com/j-ameswong/assessment-management)
+- [UniConnect](https://uniconnect-portfolio.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 145 ms · [repo](https://github.com/j-ameswong/mentee-mentor-matching)
+- [bad-apple-ify](https://bad-apple-ify.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 51 ms · [repo](https://github.com/j-ameswong/bad-apple-ify)
 <!-- DEPLOYMENTS:END -->
 
 ### <img src="assets/icons/database.svg" width="16" height="16" alt=""/> Homelab
@@ -57,4 +57,4 @@
 ### <img src="assets/icons/eye.svg" width="16" height="16" alt=""/> Latest hyperfixation
 Currently looking into text embedding + Jev as a decision layer for semantic matching
 
-<p align="right"><sub><em>Last refreshed: <!-- UPDATED:START -->2026-11-03 12:19 UTC<!-- UPDATED:END --> via systemd timer</em></sub></p>
+<p align="right"><sub><em>Last refreshed: <!-- UPDATED:START -->2026-11-03 14:10 UTC<!-- UPDATED:END --> via systemd timer</em></sub></p>
