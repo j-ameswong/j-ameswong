@@ -77,8 +77,9 @@ def recent_activity(limit=5):
             seen.add(("push", repo))
             lines.append(f"{icon('commit')} Pushed to {link}")
         elif kind == "PullRequestEvent" and payload.get("action") == "opened":
-            pr = payload["pull_request"]
-            lines.append(f"{icon('pr')} Opened PR [#{pr['number']}]({pr['html_url']}) in {link}")
+            # The events API omits html_url from pull_request, so build the link ourselves.
+            number = payload["pull_request"]["number"]
+            lines.append(f"{icon('pr')} Opened PR [#{number}](https://github.com/{repo}/pull/{number}) in {link}")
         elif kind == "ReleaseEvent":
             lines.append(f"{icon('tag')} Released `{payload['release']['tag_name']}` of {link}")
         elif kind == "CreateEvent" and payload.get("ref_type") == "repository":
