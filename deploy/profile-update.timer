@@ -1,0 +1,12 @@
+[Unit]
+Description=Refresh the GitHub profile README every 6 hours
+
+[Timer]
+# 00:17, 06:17, 12:17, 18:17 UTC: the old Action's 06:17 daily run plus the homelab pings it received
+OnCalendar=*-*-* 00/6:17:00 UTC
+# Run a missed slot at boot if the server was off
+Persistent=true
+RandomizedDelaySec=2min
+
+[Install]
+WantedBy=timers.target

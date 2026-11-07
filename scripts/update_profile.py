@@ -28,7 +28,7 @@ DEPLOYMENTS = [
     ("UniConnect","https://uniconnect-portfolio.vercel.app/", "j-ameswong/mentee-mentor-matching"),
     ("bad-apple-ify","https://bad-apple-ify.vercel.app/", "j-ameswong/bad-apple-ify")
 ]
-# homelab-ping.sh still sends emoji-prefixed lines; swap them for octicons on the way in.
+# homelab-stats.sh still writes emoji-prefixed lines; swap them for octicons on the way in.
 HOMELAB_ICONS = {"🖥️": "clock", "🐳": "package", "🟢": "dot-green", "🔴": "dot-red"}
 # Left out of the language bar: clashroyaletest is ~22 MB of HTML and drowns out everything else.
 LANGUAGE_SKIP_REPOS = {"clashroyaletest"}

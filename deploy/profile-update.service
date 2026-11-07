@@ -1,0 +1,30 @@
+[Unit]
+Description=Refresh the GitHub profile README and push it
+Wants=network-online.target
+After=network-online.target docker.service tailscaled.service
+
+[Service]
+Type=oneshot
+User=contessa
+# GITHUB_TOKEN=<PAT> for API rate limits; pushing uses contessa's SSH key.
+EnvironmentFile=/etc/profile-update.env
+Environment=PYTHONDONTWRITEBYTECODE=1
+StateDirectory=profile-update
+ExecStart=/opt/profile/profile-update.sh
+TimeoutStartSec=10min
+
+# Hardening: outbound HTTPS/SSH, the docker + tailscale sockets, read-only ~/.ssh,
+# and write access only to /var/lib/profile-update.
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=read-only
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+RestrictRealtime=true
+LockPersonality=true
+MemoryDenyWriteExecute=true
+SystemCallArchitectures=native

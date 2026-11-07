@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-# Setup systemd timer on home server
+# Print the homelab status lines as JSON (the shape update_profile.py reads from data/home.json).
 set -euo pipefail
-REPO="j-ameswong/j-ameswong"
 
 UPTIME=$(uptime -p | sed 's/^up //')
 CONTAINERS=$(docker ps -q 2>/dev/null | wc -l) || CONTAINERS=0
@@ -15,15 +14,8 @@ else
   TAILNET="unreachable" TAILNET_ICON="🔴"
 fi
 
-curl -fsS -X POST "https://api.github.com/repos/${REPO}/dispatches" \
-  -H "Authorization: Bearer ${GH_PAT}" \
-  -H "Accept: application/vnd.github+json" \
-  -d "$(cat <<JSON
-{"event_type": "home-server-update",
- "client_payload": {"lines": [
-   "🖥️ Server up ${UPTIME}",
-   "🐳 ${CONTAINERS} containers running",
-   "${TAILNET_ICON} Tailnet ${TAILNET}"
- ]}}
-JSON
-)"
+jq -n \
+  --arg uptime "🖥️ Server up ${UPTIME}" \
+  --arg containers "🐳 ${CONTAINERS} containers running" \
+  --arg tailnet "${TAILNET_ICON} Tailnet ${TAILNET}" \
+  '{lines: [$uptime, $containers, $tailnet]}'
