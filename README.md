@@ -29,26 +29,26 @@
 ### <img src="assets/icons/pulse.svg" width="16" height="16" alt=""/> SWE larp log
 <!-- ACTIVITY:START -->
 <img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/nix-config](https://github.com/j-ameswong/nix-config)<br/>
+<img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/homelab-evo-x2](https://github.com/j-ameswong/homelab-evo-x2)<br/>
 <img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/j-ameswong](https://github.com/j-ameswong/j-ameswong)<br/>
 <img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/riven-helper](https://github.com/j-ameswong/riven-helper)<br/>
-<img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/archdots](https://github.com/j-ameswong/archdots)<br/>
-<img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/assign-me](https://github.com/j-ameswong/assign-me)
+<img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/archdots](https://github.com/j-ameswong/archdots)
 <!-- ACTIVITY:END -->
 
 ### <img src="assets/icons/repo-push.svg" width="16" height="16" alt=""/> Live deployments
 <!-- DEPLOYMENTS:START -->
-- [assign-me](https://assignme-weld.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 229 ms · [repo](https://github.com/j-ameswong/assign-me)
-- [uxhack](https://uxhack-snakeup.vercel.app/signup) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 85 ms · [repo](https://github.com/j-ameswong/uxhack)
-- [assessment-manager](https://assessment-manager-fawn.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 75 ms · [repo](https://github.com/j-ameswong/assessment-management)
-- [UniConnect](https://uniconnect-portfolio.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 67 ms · [repo](https://github.com/j-ameswong/mentee-mentor-matching)
-- [bad-apple-ify](https://bad-apple-ify.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 72 ms · [repo](https://github.com/j-ameswong/bad-apple-ify)
+- [assign-me](https://assignme-weld.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 356 ms · [repo](https://github.com/j-ameswong/assign-me)
+- [uxhack](https://uxhack-snakeup.vercel.app/signup) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 452 ms · [repo](https://github.com/j-ameswong/uxhack)
+- [assessment-manager](https://assessment-manager-fawn.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 220 ms · [repo](https://github.com/j-ameswong/assessment-management)
+- [UniConnect](https://uniconnect-portfolio.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 414 ms · [repo](https://github.com/j-ameswong/mentee-mentor-matching)
+- [bad-apple-ify](https://bad-apple-ify.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 186 ms · [repo](https://github.com/j-ameswong/bad-apple-ify)
 <!-- DEPLOYMENTS:END -->
 
 ### <img src="assets/icons/database.svg" width="16" height="16" alt=""/> Homelab
 <!-- HOMELAB:START -->
-<img src="assets/icons/clock.svg" width="14" height="14" alt=""/> Server up 1 week, 4 days, 11 hours, 7 minutes<br/>
+<img src="assets/icons/clock.svg" width="14" height="14" alt=""/> Server up 1 week, 4 days, 17 hours, 7 minutes<br/>
 <img src="assets/icons/package.svg" width="14" height="14" alt=""/> 6 containers running<br/>
-<img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> Tailnet Running: 24/27 peers online
+<img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> Tailnet Running: 25/27 peers online
 <!-- HOMELAB:END -->
 
 ### <img src="assets/icons/comment-code.svg" width="16" height="16" alt=""/> Stuff I've talked to AI a lot about
@@ -57,4 +57,4 @@
 ### <img src="assets/icons/eye.svg" width="16" height="16" alt=""/> Latest hyperfixation
 Currently looking into text embedding + Jev as a decision layer for semantic matching
 
-<p align="right"><sub><em>Last refreshed: <!-- UPDATED:START -->2026-11-16 06:18 UTC<!-- UPDATED:END --> via systemd timer</em></sub></p>
+<p align="right"><sub><em>Last refreshed: <!-- UPDATED:START -->2026-11-16 12:18 UTC<!-- UPDATED:END --> via systemd timer</em></sub></p>
