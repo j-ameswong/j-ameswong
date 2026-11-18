@@ -37,16 +37,16 @@
 
 ### <img src="assets/icons/repo-push.svg" width="16" height="16" alt=""/> Live deployments
 <!-- DEPLOYMENTS:START -->
-- [assign-me](https://assignme-weld.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 399 ms · [repo](https://github.com/j-ameswong/assign-me)
-- [uxhack](https://uxhack-snakeup.vercel.app/signup) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 360 ms · [repo](https://github.com/j-ameswong/uxhack)
-- [assessment-manager](https://assessment-manager-fawn.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 358 ms · [repo](https://github.com/j-ameswong/assessment-management)
-- [UniConnect](https://uniconnect-portfolio.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 221 ms · [repo](https://github.com/j-ameswong/mentee-mentor-matching)
-- [bad-apple-ify](https://bad-apple-ify.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 396 ms · [repo](https://github.com/j-ameswong/bad-apple-ify)
+- [assign-me](https://assignme-weld.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 458 ms · [repo](https://github.com/j-ameswong/assign-me)
+- [uxhack](https://uxhack-snakeup.vercel.app/signup) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 199 ms · [repo](https://github.com/j-ameswong/uxhack)
+- [assessment-manager](https://assessment-manager-fawn.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 206 ms · [repo](https://github.com/j-ameswong/assessment-management)
+- [UniConnect](https://uniconnect-portfolio.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 218 ms · [repo](https://github.com/j-ameswong/mentee-mentor-matching)
+- [bad-apple-ify](https://bad-apple-ify.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 269 ms · [repo](https://github.com/j-ameswong/bad-apple-ify)
 <!-- DEPLOYMENTS:END -->
 
 ### <img src="assets/icons/database.svg" width="16" height="16" alt=""/> Homelab
 <!-- HOMELAB:START -->
-<img src="assets/icons/clock.svg" width="14" height="14" alt=""/> Server up 1 week, 6 days, 5 hours, 6 minutes<br/>
+<img src="assets/icons/clock.svg" width="14" height="14" alt=""/> Server up 1 week, 6 days, 11 hours, 6 minutes<br/>
 <img src="assets/icons/package.svg" width="14" height="14" alt=""/> 6 containers running<br/>
 <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> Tailnet Running: 24/27 peers online
 <!-- HOMELAB:END -->
@@ -57,4 +57,4 @@
 ### <img src="assets/icons/eye.svg" width="16" height="16" alt=""/> Latest hyperfixation
 Currently looking into text embedding + Jev as a decision layer for semantic matching
 
-<p align="right"><sub><em>Last refreshed: <!-- UPDATED:START -->2026-11-18 00:17 UTC<!-- UPDATED:END --> via systemd timer</em></sub></p>
+<p align="right"><sub><em>Last refreshed: <!-- UPDATED:START -->2026-11-18 06:17 UTC<!-- UPDATED:END --> via systemd timer</em></sub></p>
