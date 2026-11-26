@@ -55,6 +55,6 @@
 `Java` · `Python` · `Postgres` · `Docker` · `Spring` · `React`
 
 ### <img src="assets/icons/eye.svg" width="16" height="16" alt=""/> Latest hyperfixation
-Currently looking into text embedding + Jev as a decision layer for semantic matching
+Currently looking into SvelteKit, personal website coming soon^(tm)?
 
 <p align="right"><sub><em>Last refreshed: <!-- UPDATED:START -->2026-11-10 18:17 UTC<!-- UPDATED:END --> via systemd timer</em></sub></p>
