@@ -28,25 +28,25 @@
 
 ### <img src="assets/icons/pulse.svg" width="16" height="16" alt=""/> SWE larp log
 <!-- ACTIVITY:START -->
+<img src="assets/icons/star.svg" width="14" height="14" alt=""/> Starred [SemyonSinchenko/sem-skills](https://github.com/SemyonSinchenko/sem-skills)<br/>
 <img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/j-ameswong](https://github.com/j-ameswong/j-ameswong)<br/>
 <img src="assets/icons/commit.svg" width="14" height="14" alt=""/> Pushed to [j-ameswong/riven-helper](https://github.com/j-ameswong/riven-helper)<br/>
 <img src="assets/icons/pr.svg" width="14" height="14" alt=""/> Opened PR [#2](https://github.com/j-ameswong/riven-helper/pull/2) in [j-ameswong/riven-helper](https://github.com/j-ameswong/riven-helper)<br/>
-<img src="assets/icons/star.svg" width="14" height="14" alt=""/> Starred [amosblomqvist/learnharness](https://github.com/amosblomqvist/learnharness)<br/>
-<img src="assets/icons/pr.svg" width="14" height="14" alt=""/> Opened PR [#1](https://github.com/j-ameswong/riven-helper/pull/1) in [j-ameswong/riven-helper](https://github.com/j-ameswong/riven-helper)
+<img src="assets/icons/star.svg" width="14" height="14" alt=""/> Starred [amosblomqvist/learnharness](https://github.com/amosblomqvist/learnharness)
 <!-- ACTIVITY:END -->
 
 ### <img src="assets/icons/repo-push.svg" width="16" height="16" alt=""/> Live deployments
 <!-- DEPLOYMENTS:START -->
-- [assign-me](https://assignme-weld.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 239 ms · [repo](https://github.com/j-ameswong/assign-me)
-- [uxhack](https://uxhack-snakeup.vercel.app/signup) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 67 ms · [repo](https://github.com/j-ameswong/uxhack)
-- [assessment-manager](https://assessment-manager-fawn.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 82 ms · [repo](https://github.com/j-ameswong/assessment-management)
-- [UniConnect](https://uniconnect-portfolio.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 75 ms · [repo](https://github.com/j-ameswong/mentee-mentor-matching)
-- [bad-apple-ify](https://bad-apple-ify.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 84 ms · [repo](https://github.com/j-ameswong/bad-apple-ify)
+- [assign-me](https://assignme-weld.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 238 ms · [repo](https://github.com/j-ameswong/assign-me)
+- [uxhack](https://uxhack-snakeup.vercel.app/signup) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 72 ms · [repo](https://github.com/j-ameswong/uxhack)
+- [assessment-manager](https://assessment-manager-fawn.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 84 ms · [repo](https://github.com/j-ameswong/assessment-management)
+- [UniConnect](https://uniconnect-portfolio.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 357 ms · [repo](https://github.com/j-ameswong/mentee-mentor-matching)
+- [bad-apple-ify](https://bad-apple-ify.vercel.app/) <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> up · 272 ms · [repo](https://github.com/j-ameswong/bad-apple-ify)
 <!-- DEPLOYMENTS:END -->
 
 ### <img src="assets/icons/database.svg" width="16" height="16" alt=""/> Homelab
 <!-- HOMELAB:START -->
-<img src="assets/icons/clock.svg" width="14" height="14" alt=""/> Server up 3 weeks, 2 days, 11 hours, 7 minutes<br/>
+<img src="assets/icons/clock.svg" width="14" height="14" alt=""/> Server up 3 weeks, 2 days, 17 hours, 7 minutes<br/>
 <img src="assets/icons/package.svg" width="14" height="14" alt=""/> 6 containers running<br/>
 <img src="assets/icons/dot-green.svg" width="14" height="14" alt=""/> Tailnet Running: 24/27 peers online
 <!-- HOMELAB:END -->
@@ -57,4 +57,4 @@
 ### <img src="assets/icons/eye.svg" width="16" height="16" alt=""/> Latest hyperfixation
 Currently looking into SvelteKit, personal website coming soon^(tm)?
 
-<p align="right"><sub><em>Last refreshed: <!-- UPDATED:START -->2026-11-28 06:18 UTC<!-- UPDATED:END --> via systemd timer</em></sub></p>
+<p align="right"><sub><em>Last refreshed: <!-- UPDATED:START -->2026-11-28 12:18 UTC<!-- UPDATED:END --> via systemd timer</em></sub></p>
